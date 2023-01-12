@@ -8,3 +8,20 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+#testoAlternato{
+    border: 2px solid #b6b6b6 ;
+width: 900px;
+height: 200px;
+display: flex;
+align-items: center;
+padding-left: 30px;
+margin-left: 20px;
+margin-top: 30px;
+font-size: 1.5em;
+font-family:'Bree Serif', serif;
+color: #585858;}
+
+span{
+    color: #829aaa;
+}
+
