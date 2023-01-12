@@ -7,11 +7,13 @@
 6 animare le altre 2 parole
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
-
+main{
+    height: 100%;
+}
 #testoAlternato{
     border: 2px solid #b6b6b6 ;
 width: 900px;
-height: 200px;
+height: 500px;
 display: flex;
 align-items: center;
 padding-left: 30px;
@@ -19,9 +21,43 @@ margin-left: 20px;
 margin-top: 30px;
 font-size: 1.5em;
 font-family:'Bree Serif', serif;
-color: #585858;}
+color: #585858;
+position: relative;}
+
+.parole i{
+    position: absolute;
+    margin-left: 10px;
+opacity: 0;}
 
 span{
     color: #829aaa;
 }
 
+#first{
+    animation: ascending 6s linear 0s infinite
+}#second{
+    animation: ascending 6s linear 2s infinite
+}#third{
+    animation: ascending 6s linear 4s infinite
+}
+@keyframes ascending {
+    from{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    40%{opacity: 1;
+        transform: translateY(0px);
+
+    }
+    50%{
+
+    }
+    60%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(200px);
+    }
+}
